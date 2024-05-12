@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div id="clock"></div>
+    <div class="container">
+        <div class="greeting"><p>LOG IN</p></div>
+        <form id="login-form">
+            <i class="bx bxs-user"></i>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Username" required>
+            <i class='bx bxs-lock-alt'></i>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <a href="#" class="forgot">
+                <p>Forgot password?</p>
+            </a>
+            <input type="submit" class="submit-btn" value="Login">
+            <div class="create-account">
+                <p>Don't have an account? <a href="#" class="signup">Sign Up</a></p>
+            </div>
+        </form>
+    </div>
+    <label class="switch" for="darkModeToggle">
+        <input type="checkbox" id="darkModeToggle">
+        <span class="slider">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+        </span>
+      </label>
+    <script src="script.js"></script>
+</body>
+</html>
